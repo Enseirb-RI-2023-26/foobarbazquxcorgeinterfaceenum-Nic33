@@ -1,4 +1,5 @@
 package com.jad;
 
-public interface IBar {
+public interface IBar{
+    void doSomethingLikeABar();
 }

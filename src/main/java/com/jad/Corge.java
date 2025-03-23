@@ -1,9 +1,10 @@
 package com.jad;
 
-public class Qux implements IQux{
+public class Corge implements ICorge {
 
-    @Override
-    public void doSomethingLikeAQux() {
+    private final IFoo foo;
 
+    public Corge(IFoo foo) {
+        this.foo = foo;
     }
 }

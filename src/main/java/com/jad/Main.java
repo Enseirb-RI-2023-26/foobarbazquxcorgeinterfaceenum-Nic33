@@ -1,10 +1,23 @@
 package com.jad;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        // Création des objets
-        IBaz baz = EBaz.BAZ1;  // Utilisation de l'énumération
+        IBaz baz = EBaz.BAZ1;
+
+        Foo foo = new Foo(baz);
+
+        IBar bar = new Bar();
+        foo.addBar(bar);
+
+        IQux qux = new Qux();
+        foo.setQux(qux);
+
+        baz.doSomethingLikeABaz();
+        bar.doSomethingLikeABar();
+        qux.doSomethingLikeAQux();
 
 
     }

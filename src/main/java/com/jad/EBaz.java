@@ -16,7 +16,4 @@ public enum EBaz implements IBaz {
 
     }
 
-    public String getName() {
-        return name;
-    }
 }

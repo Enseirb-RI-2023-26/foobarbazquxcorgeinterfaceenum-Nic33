@@ -1,9 +1,9 @@
 package com.jad;
 
-public class Bar implements IBar{
+public class Qux implements IQux{
 
     @Override
-    public void doSomethingLikeABar() {
+    public void doSomethingLikeAQux() {
 
     }
 }
