@@ -7,7 +7,7 @@ public class Foo {
     IBaz baz;
     ArrayList<IBar> bars;
     IQux qux;
-    ICorge corge;
+    private ICorge corge;
 
     Foo(IBaz baz) {
         this.baz = baz;
