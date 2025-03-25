@@ -5,13 +5,12 @@ import java.util.ArrayList;
 public class Foo implements IFoo {
 
     private final IBaz baz;
-    private final ArrayList<IBar> bars;
-    private final IQux qux;
+    ArrayList<IBar> bars;
+    IQux qux;
     ICorge corge;
 
-    public Foo(IBaz baz, IQux qux) {
+    public Foo(IBaz baz) {
         this.baz = baz;
-        this.qux = qux;
         this.bars = new ArrayList<>();
     }
 
