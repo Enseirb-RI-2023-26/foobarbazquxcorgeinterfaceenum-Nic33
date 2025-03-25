@@ -2,7 +2,7 @@ package com.jad;
 
 public class Corge implements ICorge {
 
-    private final IFoo foo;
+    IFoo foo;
 
     public Corge(IFoo foo) {
         this.foo = foo;
@@ -15,6 +15,6 @@ public class Corge implements ICorge {
 
     @Override
     public void setFoo(IFoo foo) {
-
+        this.foo = foo;
     }
 }
