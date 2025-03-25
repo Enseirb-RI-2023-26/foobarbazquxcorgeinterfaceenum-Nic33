@@ -8,17 +8,7 @@ public class Main {
         IBaz baz = EBaz.BAZ1;
 
         Foo foo = new Foo(baz);
-
-        IBar bar = new Bar();
-        foo.addBar(bar);
-
-        IQux qux = new Qux();
-        foo.setQux(qux);
-
-        baz.doSomethingLikeABaz();
-        bar.doSomethingLikeABar();
-        qux.doSomethingLikeAQux();
-
+        ICorge corge = new Corge(foo);
 
     }
 }

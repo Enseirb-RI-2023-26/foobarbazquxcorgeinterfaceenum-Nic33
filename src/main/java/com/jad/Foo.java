@@ -2,28 +2,24 @@ package com.jad;
 
 import java.util.ArrayList;
 
-public class Foo {
+public class Foo implements IFoo {
 
     IBaz baz;
     ArrayList<IBar> bars;
     IQux qux;
     private ICorge corge;
 
-    Foo(IBaz baz) {
+    public Foo(IBaz baz) {
         this.baz = baz;
-        this.bars = new ArrayList<>(); // Correction : Initialisation de bars
+        this.bars = new ArrayList<>();
     }
 
     public void addBar(IBar bar) {
         this.bars.add(bar);
     }
 
-    public void setQux(IQux qux) {
-        this.qux = qux;
+    @Override
+    public ICorge getCorge() {
+        return this.corge;
     }
-
-    public void setCorge(ICorge corge) {
-        this.corge = corge;
-    }
-
 }
