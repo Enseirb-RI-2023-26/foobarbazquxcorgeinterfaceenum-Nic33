@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class Foo implements IFoo {
 
-    IBaz baz;
-    ArrayList<IBar> bars;
-    IQux qux;
+    private final IBaz baz;
+    private final ArrayList<IBar> bars;
+    private final IQux qux;
     ICorge corge;
 
-    public Foo(IBaz baz) {
+    public Foo(IBaz baz, IQux qux) {
         this.baz = baz;
+        this.qux = qux;
         this.bars = new ArrayList<>();
     }
 
