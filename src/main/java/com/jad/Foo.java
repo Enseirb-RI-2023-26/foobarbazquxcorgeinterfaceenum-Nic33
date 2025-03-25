@@ -7,7 +7,7 @@ public class Foo implements IFoo {
     private final IBaz baz;
     private final ArrayList<IBar> bars;
     private IQux qux;
-    ICorge corge;
+    private ICorge corge;
 
     public Foo(IBaz baz) {
         this.baz = baz;
