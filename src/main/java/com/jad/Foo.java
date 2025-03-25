@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Foo implements IFoo {
 
     private final IBaz baz;
-    ArrayList<IBar> bars;
+    private final ArrayList<IBar> bars;
     IQux qux;
     ICorge corge;
 
