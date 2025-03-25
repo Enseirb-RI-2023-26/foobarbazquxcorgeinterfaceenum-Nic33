@@ -6,7 +6,6 @@ public class Main {
         IBaz baz = EBaz.BAZ1;
 
         Foo foo = new Foo(baz);
-        ICorge corge = new Corge(foo);
 
     }
 }
