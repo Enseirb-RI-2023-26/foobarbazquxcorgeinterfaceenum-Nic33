@@ -2,7 +2,7 @@ package com.jad;
 
 public class Corge implements ICorge {
 
-    IFoo foo;
+    private IFoo foo;
 
     public Corge(IFoo foo) {
         this.foo = foo;

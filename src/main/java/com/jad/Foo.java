@@ -6,13 +6,13 @@ public class Foo implements IFoo {
 
     private final IBaz baz;
     private final ArrayList<IBar> bars;
-    private final IQux qux;
+    private IQux qux;
     private ICorge corge;
 
     public Foo(IBaz baz) {
         this.baz = baz;
         this.bars = new ArrayList<>();
-        this.qux = null;
+        this.qux = new Qux();
     }
 
     public IBaz getBaz() {
